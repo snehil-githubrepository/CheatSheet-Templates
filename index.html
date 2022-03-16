@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link rel="stylesheet" href="CSS/prism.css" />
+    <script src="prism.js"></script>
+    <title>HTML CheatSheet By Snehil</title>
+  </head>
+  <body>
+    <nav>
+      <span class="logo"><img src="Logo/copy.png" alt="" /></span>
+      <div class="content center">This CheatSheet is For You!</div>
+    </nav>
+
+    <div class="container">
+      <!-- this will contain the CheatSheet -->
+      <ol>
+        <li>
+          <!-- These changes are done due to prism.js file where "<" is &lt; and ">" is &gt; -->
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;script&gt; src=""&gt;&lt;/script&gt;
+&lt;/html&gt;</code></pre>
+        </li>
+
+        <li>
+          <b>C++ Boilerplate</b>
+          <pre class="language-cpp"><code>#include &lt;bits/stdc++.h&gt;
+using namespace std;
+#define ll         long long
+#define nl         "\n"
+#define pb         push_back
+#define mp         make_pair
+
+void solve() {
+    int n; cin >> n;
+    
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int t;
+    cin >> t;
+    while(t--) {
+        solve();
+    }
+    return 0;
+}</code></pre>
+        </li>
+        <li>
+          <b>React</b>
+          <pre
+            class="language-jsx"
+          ><code>class TodoApp extends React.Component {
+constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+}
+
+render() {
+    return (
+    &lt;div&gt;
+        &lt;h3&gt;TODO&lt;/h3&gt;
+        &lt;TodoList items={this.state.items} /&gt;
+        &lt;form onSubmit={this.handleSubmit}&gt;
+        &lt;label htmlFor="new-todo"&gt;
+            What needs to be done?
+        &lt;/label&gt;
+        &lt;input
+            id="new-todo"
+            onChange={this.handleChange}
+            value={this.state.text}
+        /&gt;
+        &lt;button&gt;
+            Add #{this.state.items.length + 1}
+        &lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    );
+}
+
+handleChange(e) {
+    this.setState({ text: e.target.value });
+}
+
+handleSubmit(e) {
+    e.preventDefault();
+    if (this.state.text.length === 0) {
+    return;
+    }
+    const newItem = {
+    text: this.state.text,
+    id: Date.now()
+    };
+    this.setState(state =&gt; ({
+    items: state.items.concat(newItem),
+    text: ''
+    }));
+}
+}
+
+class TodoList extends React.Component {
+render() {
+    return (
+    &lt;ul&gt;
+        {this.props.items.map(item =&gt; (
+        &lt;li key={item.id}&gt;{item.text}&lt;/li&gt;
+        ))}
+    &lt;/ul&gt;
+    );
+}
+}
+
+ReactDOM.render(
+&lt;TodoApp /&gt;,
+document.getElementById('todos-example')
+);</code></pre>
+        </li>
+        <li>
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+        <li>
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+        <li>
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+        <li>
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+        <li>
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+        <li>
+          <b>HTML Boilerplate</b> This is the basic HTML Boilerplate Code
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+
+        <li>
+          Marquee tag
+          <pre class="language-js"><code>var i = 45;</code></pre>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
